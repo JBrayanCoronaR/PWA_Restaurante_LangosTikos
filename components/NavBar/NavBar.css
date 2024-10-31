@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.navbar-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: orange;
+}
+
+.contact-button {
+    border: 3px solid orange; /* Borde naranja grueso */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px 15px; /* Espaciado interno */
+    color: white; /* Texto blanco por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.contact-button:hover {
+    background-color: orange; /* Fondo naranja en hover */
+    color: white !important; /* Texto blanco en hover */
+}
