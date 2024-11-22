@@ -1,0 +1,39 @@
+.titulo-ubi {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.linea-horizontal {
+    border: 0;
+    border-top: 2px solid orange; /* Línea de separación */
+    margin: 0 auto;
+    width: 40%; /* Ancho de la línea */
+}
+
+.imagen-ubicacion {
+    width: 90%; /* Hacer la imagen ancha */
+    height: auto; /* Mantener la relación de aspecto */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Centrar el carrusel */
+    overflow: hidden; /* Ocultar imágenes que sobresalgan */
+}
+
+.carousel img {
+    width: 300px; /* Ajustar según el tamaño deseado */
+    height: auto;
+    margin: 0 10px; /* Espacio entre imágenes */
+}
+
+.texto-ubicacion {
+    margin: 20px;
+    text-align: center; /* Centrar el texto */
+    color: white; /* Cambiar el color del texto si es necesario */
+}

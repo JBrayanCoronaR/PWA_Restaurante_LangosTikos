@@ -1,0 +1,181 @@
+body {
+  font-size: 16px;
+  padding: 12px;
+}
+
+
+/* cel menor a 768px */
+@media (min-width: 200px) and (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/*tabletas entre 768px y 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/*pc mayor a 1024px*/
+@media (min-width: 1025px) {
+  body {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+/*televisores mayor a 2560px */
+@media (min-width: 2560px) {
+  body {
+    font-size: 28px;
+    padding: 24px;
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: #161616;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  background-color: transparent;
+}
+
+.navbar-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Botón de menú hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links li {
+  margin-left: 50px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: orange;
+}
+
+.contact-button {
+  border: 3px solid orange; /* Borde naranja grueso */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 1px 15px; /* Espaciado interno */
+  color: white; /* Texto blanco por defecto */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.contact-button:hover {
+  background-color: orange; /* Fondo naranja en hover */
+  color: white !important; /* Texto blanco en hover */
+}
+
+.encabezado{
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #000000;
+  background-color: gray;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* Footer */
+.footer-text {
+  background-color: #161616; /* Fondo negro */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 2;
+}
+
+/* Estilos de menú para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #161616;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
